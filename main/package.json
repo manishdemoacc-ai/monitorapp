@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-  "dev": "concurrently \"npm run dev:react\" \"npm run dev:backend\" \"npm run dev:electron\"",
-  "dev:react": "vite",
-  "dev:backend": "node server.js",
-  "dev:electron": "wait-on http://localhost:5173 && electron ."
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
 },
   "dependencies": {
     "@radix-ui/react-switch": "^1.0.3",
